@@ -1,0 +1,28 @@
+# Setup
+title:            shader
+tagline:          "Writings on Computer Graphics by Mahesh Venkitachalam"
+description:      Computer Graphics
+
+url:                 https://shader.in/
+baseurl:             /
+paginate:            5
+permalink:           /:title/
+
+highlighter:      rouge
+
+# About/contact
+author:
+  name:              Mahesh Venkitachalam
+  url:               https://twitter.com/mkvenkit
+  email:             info@electronut.in
+
+github:
+  repo:           https://github.com/mkvenkit  
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Custom vars
+google_analytics_id: UA-44220663-2
+
