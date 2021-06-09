@@ -6,7 +6,7 @@
 
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
+      <img src="{{ site.title }}"/> &middot; {{ site.tagline }}
     {% else %}
       {{ page.title }} &middot; {{ site.title }}
     {% endif %}

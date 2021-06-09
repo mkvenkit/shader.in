@@ -2,6 +2,7 @@
 title:            shader.in
 tagline:          "Writings on Computer Graphics by Mahesh Venkitachalam"
 description:      shader.in
+logo:             images/shader_logo_128.png
 
 url:                 https://shader.in/
 baseurl:             /
