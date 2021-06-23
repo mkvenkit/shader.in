@@ -2,19 +2,46 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
+<div class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <span class="post-date">{{ page.date | date_to_string }}</span>
+  {{ content }}
+</div>
 
-<p class="view">Author:  {{ page.author.name | default: site.author.name }}</p>
-<small>Last modified: {{ page.modified | date: "%-d %B %Y" }}</small>
+<!-- Book promotion  -->
+<div class="pp-promo">
 
-{{content}}
+<img src = "/images/pp-128.png">
 
-<!--
-{% if page.tags %}
-  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+<p>
+If you liked this article, please consider supporting my efforts by purchasing my book. 
+</p>
+
+<p>
+<a href = "https://nostarch.com/pythonplayground">Python Playground</a>, published by No Starch Press, USA, is a collection of 
+imaginative programming projects that will inspire you to use Python to 
+make art and music, build simulations of real-world phenomena, and 
+interact with hardware like the Arduino and Raspberry Pi. Do 
+check it out!
+</p>
+
+</div>        
+
+
+{% if site.related_posts.size >= 1 %}
+<div class="related">
+  <h2>Related posts</h2>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li>
+        <h3>
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
 {% endif %}
--->
-
-
-
-{% include footer.html %}
