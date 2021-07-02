@@ -24,6 +24,4 @@ github:
 plugins:
   - jekyll-paginate
 
-# Custom vars
-google_analytics_id: UA-44220663-2
 
